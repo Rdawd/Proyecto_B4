@@ -18,9 +18,7 @@ Durante siglos, la afinación se basó en el sistema de Pitágoras, el cual cons
 
 Sin embargo, la física y las matemáticas presentan una incompatibilidad fundamental conocida como la **Coma Pitagórica**: si apilas 12 quintas perfectas calculadas mediante fracciones puras `(3/2)^12`, deberías llegar exactamente a la misma frecuencia que si apilas 7 octavas puras `2^7`. En la realidad, existe una pequeña discrepancia:
 
-```
-(1.5)^12 ≈ 129.746  ≠  2^7 = 128
-```
+(1.5)¹² ≈ 129.746  ≠  2⁷ = 128
 
 Esta imperfección provocaba que un instrumento afinado perfectamente para tocar en una tonalidad sonara disonante al intentar tocar en otra. A estos intervalos inservibles se les conocía históricamente como el "acorde del lobo".
 
@@ -30,7 +28,7 @@ Para solucionar este problema y permitir la modulación entre tonalidades sin re
 
 Este sistema divide la octava en **12 escalones idénticos** llamados **semitonos**. Como el oído humano percibe la frecuencia de manera logarítmica (multiplicando), cada escalón se calcula multiplicando la nota anterior por un factor geométrico constante: la **raíz doceava de 2**: $\sqrt[12]{2} \approx 1.059463094$
 
-Si multiplicamos una frecuencia base por este factor 12 veces consecutivas, duplicamos la frecuencia con precisión matemática absoluta:$f \times (\sqrt[12]{2})^{12} = f \times 2 = 2f \text{ (Una octava completa)}$
+Si multiplicamos una frecuencia base por este factor 12 veces consecutivas, duplicamos la frecuencia con precisión matemática absoluta:$f \times (\sqrt[12]{2})^{12} = f \times 2 = 2f$ (Una octava completa)
 
 La fórmula general para calcular la frecuencia de cualquier nota `fn` a una distancia de `n` semitonos de una nota de referencia `f0` es: $f_n = f_0 \times 2^{\frac{n}{12}}$
 
