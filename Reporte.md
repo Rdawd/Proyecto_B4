@@ -28,7 +28,9 @@ Para solucionar este problema y permitir la modulación entre tonalidades sin re
 
 Este sistema divide la octava en **12 escalones idénticos** llamados **semitonos**. Como el oído humano percibe la frecuencia de manera logarítmica (multiplicando), cada escalón se calcula multiplicando la nota anterior por un factor geométrico constante: la **raíz doceava de 2**: $\sqrt[12]{2} \approx 1.059463094$
 
-Si multiplicamos una frecuencia base por este factor 12 veces consecutivas, duplicamos la frecuencia con precisión matemática absoluta:$f \times (\sqrt[12]{2})^{12} = f \times 2 = 2f$ (Una octava completa)
+Si multiplicamos una frecuencia base por este factor 12 veces consecutivas, duplicamos la frecuencia con precisión matemática absoluta:
+
+$f \times (\sqrt[12]{2})^{12} = f \times 2 = 2f$ (Una octava completa)
 
 La fórmula general para calcular la frecuencia de cualquier nota `fn` a una distancia de `n` semitonos de una nota de referencia `f0` es: $f_n = f_0 \times 2^{\frac{n}{12}}$
 
