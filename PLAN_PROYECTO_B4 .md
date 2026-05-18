@@ -146,11 +146,11 @@ pip install pygame numpy soundfile scipy matplotlib
 
 ## Orden de uso recomendado
 
+Los pasos 2 y 3 son opcionales si `datos/` ya contiene los JSON. `main.py` los genera automáticamente si no existen. **Sí es necesario tener los audios en la carpeta audios.**
+
 ```
 1. Colocar los .wav en audios/
 2. Ejecutar analizar_audio_fft.py   → revisa tablas por instrumento
 3. Ejecutar comparar_fft_de_cada_audio.py → revisa gráficos comparativos
 4. Ejecutar main.py                 → sintetizador interactivo
 ```
-
-> Los pasos 2 y 3 son opcionales si `datos/` ya contiene los JSON. `main.py` los genera automáticamente si no existen.**

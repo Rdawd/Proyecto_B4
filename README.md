@@ -26,17 +26,15 @@ Este sistema demuestra experimentalmente que instrumentos distintos (guitarra el
 
 ## Instalación
 
-Bash
-
 ```
 pip install pygame numpy soundfile scipy matplotlib
 ```
 
 ## Uso
 
-Para un flujo de trabajo completo, ejecute los módulos en el siguiente orden:
+**Recuerda tener los audios en la carpeta audios.**
 
-Bash
+Para un flujo de trabajo completo, ejecute los módulos en el siguiente orden:
 
 ```
 # 1. Analizar los audios originales y extraer tablas de armónicos
@@ -49,6 +47,8 @@ python comparar_fft_de_cada_audio.py
 python main.py
 ```
 
+Aunque los pasos 1 y 2 son opcionales si `datos/` ya contiene los JSON. `main.py` los genera automáticamente si no existen. **Sí es necesario tener los audios en la carpeta audios.**
+
 ### Controles del Sintetizador
 
 - **Flechas Izquierda / Derecha (`←` `→`)**: Cambiar entre el motor de síntesis de guitarra eléctrica y acústica.
@@ -57,4 +57,4 @@ python main.py
 
 ---
 
-> **Nota Académica**: Los archivos generados en la carpeta `datos/` (`.json` y `.png`) son producidos dinámicamente por el script de análisis para asegurar la integridad de los resultados experimentales en cada entorno.
+> **Los archivos generados en la carpeta `datos/` (`.json` y `.png`) son producidos dinámicamente por el script de análisis analizar_audio_fft.py y  python comparar_fft_de_cada_audio.py.
