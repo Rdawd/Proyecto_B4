@@ -57,4 +57,4 @@ Aunque los pasos 1 y 2 son opcionales si `datos/` ya contiene los JSON. `main.py
 
 ---
 
-> **Los archivos generados en la carpeta `datos/` (`.json` y `.png`) son producidos dinámicamente por el script de análisis analizar_audio_fft.py y  python comparar_fft_de_cada_audio.py.
+> Los archivos generados en la carpeta `datos/` (`.json` y `.png`) son producidos dinámicamente por el script de análisis analizar_audio_fft.py y  python comparar_fft_de_cada_audio.py.
