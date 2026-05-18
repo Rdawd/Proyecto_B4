@@ -1,0 +1,60 @@
+# Sintetizador de Señales DASC (FFT-Based)
+
+Proyecto de análisis y síntesis de audio para el para el curso **Matemáticas IV** del Departamento Académico de Sistemas Computacionales (DASC), Universidad Autónoma de Baja California Sur.
+
+Este sistema demuestra experimentalmente que instrumentos distintos (guitarra eléctrica vs. acústica) generan espectros armónicos únicos a pesar de tocar la misma nota (A4 = 440 Hz). El proyecto utiliza la **Transformada Rápida de Fourier (FFT)** para capturar la "huella digital" sonora (timbre) y recrearla mediante síntesis aditiva en tiempo real.
+
+## Estructura
+
+- **`main.py`**: Punto de entrada principal; gestiona el loop de la aplicación y la lógica de interacción.
+
+- **`analizar_audio_fft.py`**: Pipeline de procesamiento; realiza la carga de `.wav`, aplicación de ventana Hanning y detección de picos espectrales.
+
+- **`comparar_fft_de_cada_audio.py`**: Módulo de visualización científica para comparar frecuencias y amplitudes entre instrumentos.
+
+- **`sintetizador.py`**: Motor de síntesis; genera ondas mediante la suma de senoides basadas en los armónicos detectados y aplica una envolvente **ADSR**.
+
+- **`interfaz.py`**: Sistema visual desarrollado en Pygame con osciloscopio de rastro de fósforo, panel FFT y teclado virtual.
+
+- **`CONSTANTES.py`**: Configuración global del sistema, mapeo de frecuencias y paletas de colores (Temas DASC).
+
+## Requisitos
+
+- Contar con los archivos de audio originales en la ruta `audios/guitarra_electrica.wav` y `audios/guitarra_acustica.wav`.
+
+- Nota de referencia grabada: **A4 (440 Hz)**.
+
+## Instalación
+
+Bash
+
+```
+pip install pygame numpy soundfile scipy matplotlib
+```
+
+## Uso
+
+Para un flujo de trabajo completo, ejecute los módulos en el siguiente orden:
+
+Bash
+
+```
+# 1. Analizar los audios originales y extraer tablas de armónicos
+python analizar_audio_fft.py
+
+# 2. Generar gráficas comparativas de espectro y barras (se guardan en datos/)
+python comparar_fft_de_cada_audio.py
+
+# 3. Iniciar el sintetizador interactivo
+python main.py
+```
+
+### Controles del Sintetizador
+
+- **Flechas Izquierda / Derecha (`←` `→`)**: Cambiar entre el motor de síntesis de guitarra eléctrica y acústica.
+
+- **Teclas `Z-M` y `Q-U`**: Tocar el teclado musical (Octavas 4 y 5). semi tonos A-L y `1-0`
+
+---
+
+> **Nota Académica**: Los archivos generados en la carpeta `datos/` (`.json` y `.png`) son producidos dinámicamente por el script de análisis para asegurar la integridad de los resultados experimentales en cada entorno.
