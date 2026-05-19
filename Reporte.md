@@ -421,7 +421,9 @@ Al final de cada iteración construye `teclas_activas_ids` filtrando `MAPEO_TECL
 1. **Equivalencia Matemática:** El software demuestra que es posible decodificar la señal acústica analógica a través de FFT, preservando los criterios de fidelidad mediante el control de la tasa de Nyquist.
 
 2. **Diferencia de frecuencias:** Se observa la diferencia entre la frecuencia de dos instrumentos que aparentemente son iguales y deberían de tener la misma frecuencia, pero no es así.
+   <img width="1950" height="750" alt="comparacion_armonicos" src="https://github.com/user-attachments/assets/80aee526-a11d-48de-b092-1fe0fe8fa21a" />
 
-3. **Realismo de Audio:** El algoritmo comprueba que la síntesis aditiva puramente matemática requiere de modulaciones dinámicas en el tiempo (envolvente ADSR) para engañar al cerebro humano y recrear sensaciones auditivas orgánicas y musicales realistas.
 
-4. Compresión indirecta de teoría musical.
+3. **Realismo de Audio:** El algoritmo comprueba que la síntesis aditiva puramente matemática requiere de modulaciones dinámicas en el tiempo (envolvente ADSR) para engañar al cerebro humano y recrear sensaciones auditivas orgánicas y musicales realistas. Además .
+
+   
