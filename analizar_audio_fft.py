@@ -58,7 +58,7 @@ def guardar_armonicos(picos, instrumento):
 
 
 # ─────────────────────────────────────────────
-#  PIPELINE — devuelve dict con tablas
+#  PIPELINE — devuelve tablas
 # ─────────────────────────────────────────────
 
 def analizar_instrumento(nombre: str) -> dict:

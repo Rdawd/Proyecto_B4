@@ -113,9 +113,7 @@ i_sustain = int(0.85 * N)   # Restan 15% para release
 
 ## 4. Implementación Explícita de la Transformada de Fourier (FFT)
 
-### 4.1 Qué es la FFT y para qué sirve en este proyecto
-
-La **Transformada Discreta de Fourier (DFT)** es una operación matemática que toma una señal expresada en el dominio del tiempo (una lista de amplitudes capturadas a intervalos regulares) y la convierte en el dominio de la frecuencia (una lista que indica cuánta energía hay en cada frecuencia posible). La **FFT** (Fast Fourier Transform) es un algoritmo que calcula exactamente el mismo resultado, pero de forma significativamente más eficiente.
+### 4.1 Propósito FFT
 
 En este proyecto la FFT cumple dos propósitos distintos en dos archivos distintos:
 
@@ -230,8 +228,6 @@ Es el único archivo del proyecto que lee audio del disco. Realiza la ingenierí
 **`cargar_audio(path)`** Abre el `.wav` con `soundfile.read`. Si el archivo es estéreo (dos canales), lo colapsa a mono promediando ambos canales con `np.mean(señal, axis=1)`. Luego normaliza dividiendo entre el máximo absoluto, dejando la señal en `[-1.0, 1.0]`. Esta normalización es crítica: sin ella, el umbral `height=0.01` en `detectar_picos` se comportaría de forma distinta dependiendo del volumen con que se grabó el `.wav`.
 
 **`extraer_fragmento_estable(señal, sr)`** Devuelve el 60% central de la señal: desde el 20% hasta el 80% del total de muestras.
-
-python
 
 ```python
 return señal[int(total * 0.20):int(total * 0.80)]
