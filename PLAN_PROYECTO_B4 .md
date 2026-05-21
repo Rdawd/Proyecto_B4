@@ -1,4 +1,4 @@
-**# Plan del Proyecto — DASC Sintetizador FFT
+# Plan del Proyecto — DASC Sintetizador FFT
 
 ## Objetivo
 
