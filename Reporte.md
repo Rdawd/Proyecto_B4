@@ -1,10 +1,6 @@
 **Departamento de Ingeniería en Sistemas Computacionales (DASC)** **Universidad Autónoma de Baja California Sur (UABCS)** 
 
-Este documento técnico describe los fundamentos físicos, matemáticos y de software detrás de un sintetizador de audio que funciona gracias a la FFT. El sistema se divide ,  en dos etapas: 
-
-1. **Ingeniería Inversa (Análisis Espectral):** Extracción automatizada de los armónicos de instrumentos reales utilizando la Transformada Rápida de Fourier (FFT) y algoritmos de detección de picos en muestras `.wav`. 
-
-2. **Síntesis Aditiva (Reconstrucción):** Recreación digital interactiva de los timbres analizados mediante osciladores senoidales gobernados por el modelo de Temperamento Igual y controlados dinámicamente por envolventes temporales ADSR.
+Este documento técnico describe los fundamentos físicos, matemáticos y de software detrás de un sintetizador de audio que funciona gracias a la FFT: 
 
 #### 1. Teoría Musical
 
