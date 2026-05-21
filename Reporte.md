@@ -415,8 +415,34 @@ sonido.play()
 - **`KEYUP` de nota:** Elimina la nota de `nota_activa_str`. El audio continúa sonando hasta que el ADSR lo apague naturalmente porque Pygame ya está reproduciendo la muestra en su propio buffer.
 
 Al final de cada iteración construye `teclas_activas_ids` filtrando `MAPEO_TECLAS` por las notas activas y llama a `dibujar_interfaz`. Luego `clock.tick(60)` bloquea el proceso el tiempo necesario para mantener exactamente 60 frames por segundo.
+##6. Consideraciones
 
-## 6. Conclusiones del Proyecto
+Los audios fueron grabados utilizando una herramienta llamada bandlab, sin embargo las dos guitarras no fueron grabadas en el mismo ambiente. La guitarra acústica fue grabada usando un micrófono dinámico FIFINE K688, mientras que la guitarra eléctrica usando un micrófono de celular. Lo cual debe ser una consideración importante a tener en cuenta.
+
+Los audios fueron grabados siguiendo las siguientes consideraciones:
+
+- **Nota grabada:** A4 (440 Hz)
+- Grabaciones `.wav`
+- **Formato:** mono (1 canal), cualquier bit depth que soporte `soundfile`
+- **Duración recomendada:** mínimo 2 segundos para que el fragmento estable
+  (60% central) tenga suficientes muestras
+- **Sin efectos:** grabación limpia, sin reverb ni distorsión extrema
+- **Ubicación exacta:** `audios/guitarra_electrica.wav` y `audios/guitarra_acustica.wav`
+
+Los controles mas comodos fueron:
+
+**Controles:**
+
+| Tecla | Acción |
+| --- | --- |
+| `← →` | Cambiar instrumento |
+| `Z–M`, `Q–U` | Notas C4–B5 |
+| `S–J`, `2–7` | Semitonos |
+| Cierre de ventana | Salir |
+
+---
+
+## 7. Conclusiones del Proyecto
 
 1. **Equivalencia Matemática:** El software demuestra que es posible decodificar la señal acústica analógica a través de FFT, preservando los criterios de fidelidad mediante el control de la tasa de Nyquist.
 
