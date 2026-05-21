@@ -1,4 +1,4 @@
-# Sintetizador de Señales DASC (FFT-Based)
+# Sintetizador de Señales DASC 
 
 Proyecto de análisis y síntesis de audio para el para el curso **Matemáticas IV** del Departamento Académico de Sistemas Computacionales (DASC), Universidad Autónoma de Baja California Sur.
 
