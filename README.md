@@ -8,7 +8,7 @@ Este sistema demuestra experimentalmente que instrumentos distintos (guitarra el
 
 <img width="1950" height="750" alt="comparacion_armonicos" src="https://github.com/user-attachments/assets/7ce5fda5-d7df-41fe-9e4a-8168a20509d8" />
 
-
+---
 
 ## Estructura
 
