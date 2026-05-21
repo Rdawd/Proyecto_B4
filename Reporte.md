@@ -442,8 +442,55 @@ Los controles mas comodos fueron:
 | Cierre de ventana | Salir |
 
 ---
+## 7. El mayor error
 
-## 7. Conclusiones del Proyecto
+El mayor error radico en el dibujo del teclado, el cual fue un error muy simple pero que arruino completamente el sentido del proyecto
+
+En `CONSTANTES.py` tenemos el mapeo de todas las teclas:
+
+```python
+MAPEO_TECLAS = {
+    pygame.K_z: "C4",  pygame.K_s: "C#4", pygame.K_x: "D4",
+    pygame.K_d: "D#4", pygame.K_c: "E4",  pygame.K_v: "F4",
+    pygame.K_g: "F#4", pygame.K_b: "G4",  pygame.K_h: "G#4",
+    pygame.K_n: "A4",  pygame.K_j: "A#4", pygame.K_m: "B4",
+    pygame.K_COMMA: "C5", pygame.K_l: "C#5", pygame.K_PERIOD: "D5",
+    
+    pygame.K_q: "C5",  pygame.K_2: "C#5", pygame.K_w: "D5",
+    pygame.K_3: "D#5", pygame.K_e: "E5",  pygame.K_r: "F5",
+    pygame.K_5: "F#5", pygame.K_t: "G5",  pygame.K_6: "G#5",
+    pygame.K_y: "A5",  pygame.K_7: "A#5", pygame.K_u: "B5",
+    pygame.K_i: "C6"
+}
+```
+
+La primera parte contiene todas las notas de la primer octava, la segunda todas las notas de la segunda octava, aparentemente todo iba bien. Sin embargo, el problema fue que justamente se esta dibujando dos veces el C5, una para el final de la primera octava y otra para el comienzo de la segunda octava.
+
+<img width="1597" height="523" alt="image" src="https://github.com/user-attachments/assets/eb78a00d-87ac-45d9-924a-8650ecd51629" />
+
+Se solucionó muy fácilmente corrigiendo esa parte del código de tal manera que eliminamos esas notas:**pygame.K_COMMA: "C5", pygame.K_l: "C#5", pygame.K_PERIOD: "D5"**
+
+```python
+MAPEO_TECLAS = {
+    pygame.K_z: "C4",  pygame.K_s: "C#4", pygame.K_x: "D4",
+    pygame.K_d: "D#4", pygame.K_c: "E4",  pygame.K_v: "F4",
+    pygame.K_g: "F#4", pygame.K_b: "G4",  pygame.K_h: "G#4",
+    pygame.K_n: "A4",  pygame.K_j: "A#4", pygame.K_m: "B4",
+    
+    
+    pygame.K_q: "C5",  pygame.K_2: "C#5", pygame.K_w: "D5",
+    pygame.K_3: "D#5", pygame.K_e: "E5",  pygame.K_r: "F5",
+    pygame.K_5: "F#5", pygame.K_t: "G5",  pygame.K_6: "G#5",
+    pygame.K_y: "A5",  pygame.K_7: "A#5", pygame.K_u: "B5",
+    pygame.K_i: "C6"
+}
+```
+
+<img width="1597" height="524" alt="image" src="https://github.com/user-attachments/assets/3bec4788-3350-4ffd-a650-abd4027b669b" />
+
+Se dibuja perfectamente ahora, gracias a **dios**.
+
+## 8. Conclusiones del Proyecto
 
 1. **Equivalencia Matemática:** El software demuestra que es posible decodificar la señal acústica analógica a través de FFT, preservando los criterios de fidelidad mediante el control de la tasa de Nyquist.
 
