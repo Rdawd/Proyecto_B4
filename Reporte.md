@@ -422,7 +422,7 @@ Los audios fueron grabados utilizando una herramienta llamada bandlab, sin embar
 Los audios fueron grabados siguiendo las siguientes consideraciones:
 
 - **Nota grabada:** A4 (440 Hz)
-- Grabaciones `.wav`
+- **Grabaciones** `.wav`
 - **Formato:** mono (1 canal), cualquier bit depth que soporte `soundfile`
 - **Duración recomendada:** mínimo 2 segundos para que el fragmento estable
   (60% central) tenga suficientes muestras
