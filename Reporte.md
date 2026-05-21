@@ -1,4 +1,4 @@
-#Departamento de Ingeniería en Sistemas Computacionales (DASC)** **Universidad Autónoma de Baja California Sur (UABCS)** 
+# Departamento de Ingeniería en Sistemas Computacionales (DASC)** **Universidad Autónoma de Baja California Sur (UABCS)** 
 
 Este documento técnico describe los fundamentos físicos, matemáticos y de software detrás de un sintetizador de audio que funciona gracias a la FFT: 
 
