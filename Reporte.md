@@ -1,7 +1,7 @@
 # Reporte del sintetizador
 ## Departamento de Ingeniería en Sistemas Computacionales (DASC) **Universidad Autónoma de Baja California Sur (UABCS)** 
 
-Este documento técnico describe los fundamentos físicos, matemáticos y de software detrás de un sintetizador de audio que funciona gracias a la FFT: 
+Este documento técnico describe los fundamentos físicos, matemáticos y de software detrás de un sintetizador de audio que funciona gracias a la FFT. Para el curso de Matemáticas IV del Departamento Académico de Sistemas Computacionales (DASC), Universidad Autónoma de Baja California Sur
 
 ## 1. Teoría Musical
 
