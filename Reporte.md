@@ -3,7 +3,7 @@
 
 Este documento técnico describe los fundamentos físicos, matemáticos y de software detrás de un sintetizador de audio que funciona gracias a la FFT: 
 
-#### 1. Teoría Musical
+## 1. Teoría Musical
 
 Para entender cómo funciona el proyecto hay que saber varias cosas de teoría musical: octavas, tonos, semitonos, coma pitagórica, temperamento igual, entre otras.
 
@@ -198,7 +198,7 @@ Panel FFT de la interfaz: 12 barras en tiempo real
 
 A continuación, se presentan los fragmentos de código exactos de la arquitectura del proyecto que sustentan científicamente los puntos anteriores.
 
-###### 5.1 Archivo: `CONSTANTES.py`
+### 5.1 Archivo: `CONSTANTES.py`
 
 Centraliza toda la configuración del proyecto en un único punto. No contiene lógica ejecutable.
 
