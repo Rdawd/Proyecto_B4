@@ -1,6 +1,6 @@
 # Sintetizador de Señales DASC 
 
-Proyecto de análisis y síntesis de audio para el para el curso **Matemáticas IV** del Departamento Académico de Sistemas Computacionales (DASC), Universidad Autónoma de Baja California Sur.
+Proyecto de análisis y síntesis de audio para el curso **Matemáticas IV** del Departamento Académico de Sistemas Computacionales (DASC), Universidad Autónoma de Baja California Sur.
 
 Este sistema demuestra experimentalmente que instrumentos distintos (guitarra eléctrica vs. acústica) generan espectros armónicos únicos a pesar de tocar la misma nota (A4 = 440 Hz). El proyecto utiliza la **Transformada Rápida de Fourier (FFT)** para capturar la "huella digital" sonora (timbre) y recrearla con el **temperamento igual**. Además se desarrollo un sintetizador que permite escuchar las demás notas tomando como base la misma nota:.
 
