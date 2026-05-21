@@ -4,7 +4,7 @@ Este documento técnico describe los fundamentos físicos, matemáticos y de sof
 
 1. **Ingeniería Inversa (Análisis Espectral):** Extracción automatizada de los armónicos de instrumentos reales utilizando la Transformada Rápida de Fourier (FFT) y algoritmos de detección de picos en muestras `.wav`. 
 
-2. 2. **Síntesis Aditiva (Reconstrucción):** Recreación digital interactiva de los timbres analizados mediante osciladores senoidales gobernados por el modelo de Temperamento Igual y controlados dinámicamente por envolventes temporales ADSR.
+2. **Síntesis Aditiva (Reconstrucción):** Recreación digital interactiva de los timbres analizados mediante osciladores senoidales gobernados por el modelo de Temperamento Igual y controlados dinámicamente por envolventes temporales ADSR.
 
 #### 1. Teoría Musical
 
