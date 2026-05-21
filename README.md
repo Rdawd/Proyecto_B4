@@ -3,8 +3,7 @@
 Proyecto de análisis y síntesis de audio para el para el curso **Matemáticas IV** del Departamento Académico de Sistemas Computacionales (DASC), Universidad Autónoma de Baja California Sur.
 
 Este sistema demuestra experimentalmente que instrumentos distintos (guitarra eléctrica vs. acústica) generan espectros armónicos únicos a pesar de tocar la misma nota (A4 = 440 Hz). El proyecto utiliza la **Transformada Rápida de Fourier (FFT)** para capturar la "huella digital" sonora (timbre) y recrearla mediante síntesis aditiva en tiempo real.
-<img width="1598" height="501" alt="Captura de pantalla 2026-05-18 201554" src="https://github.com/user-attachments/assets/8cc8bb71-b559-4f47-b62d-4f1694eeafc8" />
-
+<img width="1596" height="524" alt="image" src="https://github.com/user-attachments/assets/5e4234ad-d68c-4def-909e-eb7e744e9d0c" />
 
 ## Estructura
 
