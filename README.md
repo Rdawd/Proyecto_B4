@@ -14,15 +14,15 @@ Este sistema demuestra experimentalmente que instrumentos distintos (guitarra el
 
 - **`main.py`**: Punto de entrada principal; gestiona el loop de la aplicación y la lógica de interacción.
 
-- **`analizar_audio_fft.py`**: Pipeline de procesamiento; realiza la carga de `.wav`, aplicación de ventana Hanning y detección de picos espectrales.
+- **`analizar_audio_fft.py`**: Realiza la carga de `.wav`, aplicación de ventana Hanning y detección de picos espectrales.
 
 - **`comparar_fft_de_cada_audio.py`**: Módulo de visualización científica para comparar frecuencias y amplitudes entre instrumentos.
 
-- **`sintetizador.py`**: Motor de síntesis; genera ondas mediante la suma de senoides basadas en los armónicos detectados y aplica una envolvente **ADSR**.
+- **`sintetizador.py`**: Genera ondas mediante la suma de senoides basadas en los armónicos detectados y aplica una envolvente **ADSR**.
 
 - **`interfaz.py`**: Sistema visual desarrollado en Pygame con osciloscopio de rastro de fósforo, panel FFT y teclado virtual.
 
-- **`CONSTANTES.py`**: Configuración global del sistema, mapeo de frecuencias y paletas de colores (Temas DASC).
+- **`CONSTANTES.py`**: Configuración global del sistema, mapeo de frecuencias y paletas de colores.
 
 ## Requisitos
 
