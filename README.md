@@ -55,7 +55,7 @@ Aunque los pasos 1 y 2 son opcionales si `datos/` ya contiene los JSON. `main.py
 
 - **Flechas Izquierda / Derecha (`←` `→`)**: Cambiar entre el motor de síntesis de guitarra eléctrica y acústica.
 
-- **Teclas `Z-M` y `Q-U`**: Tocar el teclado musical (Octavas 4 y 5). semi tonos A-L y `1-0`
+- **Teclas `Z-M` y `Q-U`**: Tocar el teclado musical (Octavas 4 y 5), **semi tonos** `S-J` y `2-7`
 
 ---
 
