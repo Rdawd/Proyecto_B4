@@ -78,7 +78,7 @@ MAPEO_TECLAS = {
     pygame.K_d: "D#4", pygame.K_c: "E4",  pygame.K_v: "F4",
     pygame.K_g: "F#4", pygame.K_b: "G4",  pygame.K_h: "G#4",
     pygame.K_n: "A4",  pygame.K_j: "A#4", pygame.K_m: "B4",
-    pygame.K_COMMA: "C5", pygame.K_l: "C#5", pygame.K_PERIOD: "D5",
+    
     
     pygame.K_q: "C5",  pygame.K_2: "C#5", pygame.K_w: "D5",
     pygame.K_3: "D#5", pygame.K_e: "E5",  pygame.K_r: "F5",
