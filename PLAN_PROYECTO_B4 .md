@@ -118,11 +118,12 @@ Cada instrumento tiene su paleta de color:
 
 **Controles:**
 
-| Tecla             | Acción              |
-| ----------------- | ------------------- |
-| `← →`             | Cambiar instrumento |
-| `Z–M`, `Q–U`      | Notas C4–B5         |
-| Cierre de ventana | Salir               |
+| Tecla | Acción |
+| --- | --- |
+| `← →` | Cambiar instrumento |
+| `Z–M`, `Q–U` | Notas C4–B5 |
+| `S–J`, `2–7` | Semitonos |
+| Cierre de ventana | Salir |
 
 ---
 
