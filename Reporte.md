@@ -417,6 +417,7 @@ sonido.play()
 Al final de cada iteración construye `teclas_activas_ids` filtrando `MAPEO_TECLAS` por las notas activas y llama a `dibujar_interfaz`. Luego `clock.tick(60)` bloquea el proceso el tiempo necesario para mantener exactamente 60 frames por segundo.
 ##6. Consideraciones
 
+## 6. Consideraciones
 Los audios fueron grabados utilizando una herramienta llamada bandlab, sin embargo las dos guitarras no fueron grabadas en el mismo ambiente. La guitarra acústica fue grabada usando un micrófono dinámico FIFINE K688, mientras que la guitarra eléctrica usando un micrófono de celular. Lo cual debe ser una consideración importante a tener en cuenta.
 
 Los audios fueron grabados siguiendo las siguientes consideraciones:
@@ -450,6 +451,6 @@ Los controles mas comodos fueron:
    <img width="1950" height="750" alt="comparacion_armonicos" src="https://github.com/user-attachments/assets/80aee526-a11d-48de-b092-1fe0fe8fa21a" />
 
 
-3. **Realismo de Audio:** El algoritmo comprueba que la síntesis aditiva puramente matemática requiere de modulaciones dinámicas en el tiempo (envolvente ADSR) para engañar al cerebro humano y recrear sensaciones auditivas orgánicas y musicales realistas. Además .
+3. **Realismo de Audio:** El algoritmo comprueba que la síntesis aditiva puramente matemática requiere de modulaciones dinámicas en el tiempo (envolvente ADSR) para engañar al cerebro humano y recrear sensaciones auditivas orgánicas y musicales realistas.
 
    
